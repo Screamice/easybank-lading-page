@@ -1,3 +1,7 @@
+ @import "./header.scss";
+ @import "./menu.scss";
+ @import "./hero.scss"
+
 :root{
     --Dark-Blue: hsl(233, 26%, 24%);
     --Lime-Green: hsl(136, 65%, 51%);
@@ -16,52 +20,6 @@ body{
     margin: 0;
     color: var(--Grayish-Blue);
 }
-
-.hero{
-    text-align: center;
-
-    .copy{
-        margin-bottom: 2.2em;
-    }
-
-    &__image{
-        height: 300px;
-        background: url('../../images/image-mockups.png') center bottom no-repeat, url('../../images/bg-intro-mobile.svg') center no-repeat;
-        background-size: 345px, cover;
-        margin: 0 -1.5em;
-        margin-bottom: 1.4em;
-    }
-}
-
 .wrapper{
     padding: 0 1.3em;
-}
-
-.title{
-    &__h1{
-        font-size: 2.3em;
-        color: var(--Dark-Blue);
-        font-weight: 300;
-        line-height: 1.2;
-        margin: 0;
-        margin-bottom: 0.5em;
-    }
-}
-
-.copy{
-    font-size: 0.8em;
-    line-height: 1.8em;
-}
-
-.button{
-    padding: 0.9em 2.2em;
-    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
-    color: var(--White);
-    border-radius: 1.5em;
-    border: none;
-    font-size: 1em;
-}
-
-.header{
-    
 }
