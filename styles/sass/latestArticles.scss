@@ -1,0 +1,35 @@
+.latestArticles{
+    background: var(--Very-Light-Gray);
+    padding: 5em 0;
+
+    .title__h1{
+        text-align: center;
+    }
+
+    &__grid{
+        display: grid;
+        grid-row-gap: 2em;
+    }
+
+    &__item{
+        border-radius: 0.3em;
+        overflow: hidden;
+        background: var(--White);
+
+        &__content{
+            padding: 1.7em;
+        }
+
+        small{
+            margin-bottom: 1em;
+            display: block;
+            font-size: 0.65em;
+        }
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
