@@ -1,0 +1,63 @@
+.footer{
+    background: var(--Dark-Blue);
+    color: var(--White);
+    padding: 2em 0;
+    text-align: center;
+
+
+    svg{
+        display: block;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    &__social{
+        display: grid;
+        grid-template-columns: repeat(5, 25px);
+        grid-column-gap: 10px;
+        justify-content: center;
+        margin: 2em 0;
+    }
+
+    &__link{
+        display: block;
+        color: var(--Very-Light-Gray);
+        margin-bottom: 1.5em;
+        text-decoration: none;
+    }
+
+    &__copyright{
+        color: var(--Grayish-Blue);
+        margin-top: 2.5em;
+        font-size: 0.9em;
+    }
+}
+
+@mixin icon{
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+}
+
+.icon{
+    &__facebook{
+        @include icon;
+        background: url('../../images/icon-facebook.svg') center no-repeat;
+    }
+    &__youtube{
+        @include icon;
+        background: url('../../images/icon-youtube.svg') center no-repeat;
+    }
+    &__twitter{
+        @include icon;
+        background: url('../../images/icon-twitter.svg') center no-repeat;
+    }
+    &__pinterest{
+        @include icon;
+        background: url('../../images/icon-pinterest.svg') center no-repeat;
+    }
+    &__instagram{
+        @include icon;
+        background: url('../../images/icon-instagram.svg') center no-repeat;
+    }
+}
